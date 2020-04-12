@@ -1,8 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-const userList = ["Patryk", "Ania", "Amadeusz", "Mateusz", "Patrycja", "Adrianna"];
+import Nawigacja from './podstrony/nawigacja';
+import Home from './podstrony/home/home';
+import Filtrowanie from './podstrony/filtrowanie/filtrowanie';
+import NotFound from './podstrony/notFound/notFound';
+
+/*const userList = ["Patryk", "Ania", "Amadeusz", "Mateusz", "Patrycja", "Adrianna"];
 
 const ListaUzytkownikow = (props) => {
   if(props.users.length > 0){
@@ -17,10 +26,10 @@ const ListaUzytkownikow = (props) => {
       <p className="app-p"> Brak wyników </p>
     );
   }
-}
+}*/
 
 class App extends React.Component{
-  constructor(props){
+  /*constructor(props){
     super(props);
 
     this.state = {filtrowaniUzytkownicy: userList};
@@ -46,6 +55,27 @@ class App extends React.Component{
 
   filtrowaniUzytkownicyPrzezTekst(text){
     return userList.filter((user) => user.toLowerCase().includes(text.toLowerCase()));
+  }*/
+
+  render(){
+    return(
+      <Router>
+        <div>
+          <Nawigacja />
+          <Switch>
+            <Route path="/filtrowanie">
+              <Filtrowanie />
+            </Route>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route >
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
   }
 }
 
