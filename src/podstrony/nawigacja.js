@@ -1,15 +1,36 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import "./nawigacja.css";
 
-export default function Nawigacja(){
+function Odsylacze(props){
     return(
-        <ul>
-            <li>
-                <Link to="/test/">Home</Link>
-            </li>
-            <li>
-                <Link to="/test/filtrowanie">Filtrowanie</Link>
-            </li>
-         </ul>
+        <Link to={props.odsylacz} className="text">{props.naglowek}</Link>
     );
 }
+
+function Nawigacja(){
+    return(
+        <table>
+            <tr>
+                <td> <Odsylacze odsylacz="/test/" naglowek="Home" /> </td>
+                <td> <Odsylacze odsylacz="/test/filtrowanie" naglowek="Filtrowanie" /> </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+        </table>
+    );
+}
+
+function HeaderNawigacja(){
+    return(
+        <header className="headernaw">
+            <div className="headernaw-div">
+                <Nawigacja />
+            </div>
+            <hr />
+        </header>
+    );
+}
+
+export default HeaderNawigacja;

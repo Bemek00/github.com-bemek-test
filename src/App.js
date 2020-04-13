@@ -63,11 +63,11 @@ class App extends React.Component{
         <div>
           <Nawigacja />
           <Switch>
-            <Route path="/test/filtrowanie">
-              <Filtrowanie />
-            </Route>
             <Route path="/test/" exact>
               <Home />
+            </Route>
+            <Route path="/test/filtrowanie">
+              <Filtrowanie />
             </Route>
             <Route>
               <NotFound />
