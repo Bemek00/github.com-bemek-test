@@ -1,0 +1,9 @@
+.mainpod{
+    width: 100%;
+}
+
+.mainpod-div{
+    width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}

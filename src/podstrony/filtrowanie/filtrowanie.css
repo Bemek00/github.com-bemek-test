@@ -1,0 +1,23 @@
+.filtrowanie{
+    width: 224px;
+    margin: 0 auto;
+}
+
+.filtrowanie-ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.filtrowanie-input{
+    width: 220px;
+    height: 20px;
+    font-size: 16px;
+}
+
+.filtrowanie-p{
+    margin-top: 5px;
+    font-size: 16px;
+    color: red;
+}
