@@ -11,6 +11,7 @@ import Home from './podstrony/home/home';
 import Filtrowanie from './podstrony/filtrowanie/filtrowanie';
 import NotFound from './podstrony/notFound/notFound';
 import PodzialStrony from './podstrony/podzialStron/podzialstron';
+import Zdarzenia from './podstrony/zdarzenia/zdarzenia';
 
 function App(){
   return(
@@ -23,6 +24,9 @@ function App(){
           </Route>
           <Route path="/test/filtrowanie">
             <PodzialStrony tresc={<Filtrowanie />} />
+          </Route>
+          <Route path="/test/zdarzenia">
+            <PodzialStrony tresc={<Zdarzenia />} />
           </Route>
           <Route>
             <PodzialStrony tresc={<NotFound />} />

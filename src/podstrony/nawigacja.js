@@ -14,7 +14,7 @@ function Nawigacja(){
             <tr>
                 <td> <Odsylacze odsylacz="/test/" naglowek="Home" /> </td>
                 <td> <Odsylacze odsylacz="/test/filtrowanie" naglowek="Filtrowanie" /> </td>
-                <td>  </td>
+                <td> <Odsylacze odsylacz="/test/zdarzenia" naglowek="Zdarzenia" /> </td>
                 <td>  </td>
                 <td>  </td>
             </tr>
@@ -28,7 +28,7 @@ function HeaderNawigacja(){
             <div className="headernaw-div">
                 <Nawigacja />
             </div>
-            <hr />
+            <hr id="linia" />
         </header>
     );
 }
