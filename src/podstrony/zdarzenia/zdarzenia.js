@@ -3,6 +3,7 @@ import './zdarzenia.css';
 
 import Logowanie from './logowanie';
 import EmailBox from './mail';
+import Page from './ostrzezenie';
 
 
 function ActionLink() {
@@ -51,6 +52,8 @@ function Zdarzenia(){
             <Logowanie />
             <hr />
             <EmailBox nieprzeczytaneEmail={['patrry', 'ja']} />
+            <hr />
+            <Page />
         </div>
     );
 }
