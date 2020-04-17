@@ -1,5 +1,8 @@
 import React from 'react';
 
+import EassyForm from './eassyForm';
+import FlaovorForm from './flavorForm';
+
 class NameForm extends React.Component{
     constructor(props){
         super(props);
@@ -33,7 +36,13 @@ class NameForm extends React.Component{
 
 function Formularze(){
     return(
-        <NameForm />
+        <div>
+            <NameForm />
+            <hr />
+            <EassyForm />
+            <hr />
+            <FlaovorForm />
+        </div>
     );
 }
 
