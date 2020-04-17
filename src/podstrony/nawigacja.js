@@ -15,8 +15,8 @@ function Nawigacja(){
                 <td> <Odsylacze odsylacz="/test/" naglowek="Home" /> </td>
                 <td> <Odsylacze odsylacz="/test/filtrowanie" naglowek="Filtrowanie" /> </td>
                 <td> <Odsylacze odsylacz="/test/zdarzenia" naglowek="Zdarzenia" /> </td>
-                <td>  </td>
-                <td>  </td>
+                <td> <Odsylacze odsylacz="/test/klucze" naglowek="Klucze" /> </td>
+                <td> <Odsylacze odsylacz="/test/formularze" naglowek="Formularze" /> </td>
             </tr>
         </table>
     );
